@@ -1,51 +1,49 @@
-import Image from "next/image";
+import { FaGithub } from "react-icons/fa";
 
 export default function Home() {
   return (
-    <div className="font-sans grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 bg-black text-white">
-      <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-center">
-        <h1 className="text-8xl font-bold bg-gradient-to-br from-gray-100 via-gray-300 to-gray-500 bg-clip-text text-transparent text-center sm:text-left">
-          Devora App
-        </h1>
-        <p className="text-gray-400 text-center sm:text-left">
-          Our stack to deploy fully working applications includes Next.js,
-          Convex, ShadCN and Tailwind CSS.
-        </p>
+    <div className="font-sans grid min-h-screen grid-rows-[20px_1fr_20px] items-center justify-items-center gap-16 p-8 pb-20 text-foreground sm:p-20 bg-background">
+      <main className="row-start-2 -mt-8 flex flex-col items-center justify-start gap-8 text-center">
+        <header>
+          <h1 className="text-6xl font-bold sm:text-8xl text-secondary-foreground">
+            Devora App
+          </h1>
+          <p className="mt-4 max-w-xl text-muted-foreground text-center">
+            Our stack to deploy fully working applications includes Next.js,
+            Convex, ShadCN and Tailwind CSS.
+          </p>
+        </header>
 
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
+        <div className="flex flex-col items-center gap-4 sm:flex-row">
           <a
-            className="rounded-full   transition-colors flex items-center justify-center bg-white text-black gap-2 hover:bg-gray-200 font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:w-auto"
             href="https://github.com/denislav-nedkov/devora-app"
             target="_blank"
             rel="noopener noreferrer"
+            aria-label="View Devora App on GitHub"
+            className="flex h-12 items-center justify-center gap-2 rounded-full bg-foreground px-5 text-sm font-medium text-background transition-colors hover:bg-foreground/90 sm:text-base"
           >
-            <Image
-              src="/github-mark.svg"
-              alt="GitHub logomark"
-              width={20}
-              height={20}
-            />
+            <FaGithub className="h-6 w-6" />
             View on GitHub
           </a>
         </div>
       </main>
 
-      <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
+      <footer className="row-start-3 flex flex-wrap items-center justify-center gap-6 text-muted-foreground">
         <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4 text-gray-400"
           href="https://github.com/denislav-nedkov"
           target="_blank"
           rel="noopener noreferrer"
+          className="hover:underline hover:underline-offset-4"
         >
-          @Denislav Nedkov
+          @Denislav&nbsp;Nedkov
         </a>
         <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4 text-gray-400"
           href="https://github.com/DenisHranislavov"
           target="_blank"
           rel="noopener noreferrer"
+          className="hover:underline hover:underline-offset-4"
         >
-          @Denis Hranislavov
+          @Denis&nbsp;Hranislavov
         </a>
       </footer>
     </div>

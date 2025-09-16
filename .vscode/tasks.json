@@ -1,0 +1,43 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Open Terminal with Focus",
+            "type": "shell",
+            "windows": {
+                "command": "wt.exe",
+                "args": [
+                    "--title",
+                    "Denki4a Terminal",
+                    "-d",
+                    "${workspaceFolder}",
+                    "cmd",
+                    "/k",
+                ]
+            },
+            "linux": {
+                "command": "gnome-terminal",
+                "args": [
+                    "--working-directory=${workspaceFolder}"
+                ]
+            },
+            "osx": {
+                "command": "open",
+                "args": [
+                    "-a",
+                    "Terminal",
+                    "${workspaceFolder}"
+                ]
+            },
+            "group": "build",
+            "presentation": {
+                "echo": false,
+                "reveal": "never",
+                "focus": false,
+                "panel": "shared",
+                "showReuseMessage": false,
+                "clear": true
+            }
+        }
+    ]
+}
