@@ -1,6 +1,6 @@
 # Devora App
 
-A modern full-stack web application built with **Next.js 15**, **TypeScript**, **ShadCN/UI**, **Convex**, and **NextAuth**.  
+A modern full-stack web application built with **Next.js 15**, **TypeScript**, **ShadCN/UI**.
 This app is designed for speed, scalability, and an exceptional developer experience.
 
 ---
@@ -10,8 +10,6 @@ This app is designed for speed, scalability, and an exceptional developer experi
 - **Next.js 15** – React framework with the App Router and server components
 - **TypeScript** – Static typing for safer, more maintainable code
 - **ShadCN/UI** – Beautiful, accessible, and themeable UI components
-- **Convex** – Real-time backend & database with serverless functions
-- **NextAuth** – Authentication and session management
 
 ---
 
