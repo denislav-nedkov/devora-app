@@ -20,7 +20,5 @@ This app is designed for speed, scalability, and an exceptional developer experi
 Clone the repository and install dependencies:
 
 ```bash
-npx create-devora-app .
-# then
-npm install
+npx create-devora-app app-name
 ```
