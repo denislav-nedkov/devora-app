@@ -17,7 +17,7 @@ This app is designed for speed, scalability, and an exceptional developer experi
 
 ## 📦 Installation
 
-Clone the repository and install dependencies:
+Clone the repo using this command:
 
 ```bash
 npx create-devora-app app-name
