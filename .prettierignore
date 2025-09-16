@@ -1,0 +1,44 @@
+# Node dependencies
+node_modules/
+
+# Next.js build output
+.next/
+out/
+dist/
+
+# Environment variables
+.env
+.env.local
+.env.development.local
+.env.production.local
+.env.test.local
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# IDEs and editors
+.vscode/
+.vscode-test/
+.idea/
+
+# Misc
+.DS_Store
+Thumbs.db
+.cache/
+coverage/
+*.tsbuildinfo
+
+# Config / lock files
+package-lock.json
+yarn.lock
+.pnpm-lock.yaml
+.prettierrc
+.eslintrc.json
+
+# Convex generated files
+convex/generated/
